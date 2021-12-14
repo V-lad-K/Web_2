@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <header id="header" class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(238, 230, 230)">
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-1">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Lab2</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <button class="btn btn-primary" type="submit" id="spaceStation">Space Station</button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="btn btn-primary" type="submit" id="planet">Planet</button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="btn btn-primary" type="submit" id="cargo">Cargo</button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="btn btn-primary" type="submit" id="cargoOnStation">Cargo on Station</button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="btn btn-primary" type="submit" id="cargoOnPlanet">Cargo on Planet</button>
+                  </li>
+                </ul>
+              </div>
+        </nav>
+    </header>    
+    
+    <section>
+        <section style="margin-right: 120px; margin-left: 120px; margin-top: 90px;">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(238, 230, 230)">
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-1">
+                      <li class="nav-item">
+                        <a class="nav-link active subtitle" aria-current="page" href="#" id="subtitle">Lab2</a>
+                      </li>
+                      <li class="nav-item">
+                        <input type="text" class="form-control" id="validation" value="" required>
+                     </li>
+                      
+                    </ul>
+                  </div>
+            </nav>
+        </section>
+        <section>
+            <div style="margin-top: 50px; margin-left: 135px;">
+                <div class="row g-2 align-items-center">
+                    <div class="col-auto">
+                        <label for="inputPassword6" class="col-form-label label-id-shop" >Number</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" class="form-control" id="validationCustom04" value="" required>
+                    </div>
+                    <div class="col-auto">
+                        <label for="inputPassword6" class="col-form-label label-name-shop" >Capacity</label>
+                      </div>
+                    <div class="col-auto">
+                        <input type="text" class="form-control" id="validationCustom01" value="" required>
+                    </div>
+                    <div class="col-auto">
+                      <label for="inputPassword6" class="col-form-label label-adress-shop">need</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" class="form-control" id="validationCustom02" value="" required>
+                    </div>
+                   
+                    <div class="col-auto">
+                        <button class="btn btn-primary" type="submit" id="create">CREATE</button>
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn btn-primary" type="submit" id="delete">Delete</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section>
+            <div style="margin-top: 50px; margin-left: 135px;">
+                <div class="row g-2 align-items-center">
+                  <div class="col-auto">
+                    <input type="text" class="form-control" id="transferToStationInput" value="" required>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary" type="submit" id="transferToStationbtn">Transfer cargo to station</button>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary" type="submit" id="transferToPlanetbtn">Transfer cargo to planet</button>
+                  </div>
+                  <div class="col-auto">
+                    <input type="text" class="form-control" id="idd" value="" required>
+                  </div>
+                  
+                  <div>
+                    <button class="btn btn-primary" type="submit" id="report">SrorageToStorage</button>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary" type="submit" id="report2">FromPlanetToStation</button>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary" type="submit" id="report3">Report</button>
+                  </div>
+                   
+                </div>
+            </div>
+        </section>
+          
+        <section style="margin-top: 15px;">
+            <div style=" margin-left: 1100px;">
+                <div class="row g-2 align-items-center">
+                    <div class="col-auto">
+                      <button class="btn btn-primary" type="submit" id="search">Search</button>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" class="form-control" id="validationCustom03" value="" required>
+                    </div>
+                   
+                    
+                </div>
+            </div>
+        </section>
+    
+        <section style="margin-top: 17px; margin-left: 135px;">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col" class="table1"></th>
+                    <th scope="col" class="table2"></th>
+                    <th scope="col" class="table3"></th>
+                  </tr>
+                </thead >
+                <tbody id="cargo-table">
+                    <tr id="1">
+                    <tr id="2">    
+                    <tr id="3">
+                    <tr id="4"> 
+                </tbody>
+            </table>
+        </section>
+        
+        
+        
+    </section>
+<script src="lab2.js"></script>
+       
+</body>
+</html>
+
